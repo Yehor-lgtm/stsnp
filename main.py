@@ -1,9 +1,6 @@
 import subprocess 
 import sys
 
-result = subprocess.run(["snap", "list"], capture_output=True, text=True)
-lines = result.stdout.splitlines()
-
 IGNORE = {
         'bare',
         'core20',
